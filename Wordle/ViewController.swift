@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let segueIdgoToGame = "goToGame"
+    let segueIdgoToPlay = "goToPlay"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +18,7 @@ class ViewController: UIViewController {
 
    
     @IBAction func startGameButton(_ sender: UIButton) {
-        performSegue(withIdentifier: segueIdgoToGame, sender: self)
+        performSegue(withIdentifier: segueIdgoToPlay, sender: self)
     }
     
 }
