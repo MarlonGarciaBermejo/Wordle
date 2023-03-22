@@ -2,32 +2,30 @@
 //  ScoreViewController.swift
 //  Wordle
 //
-//  Created by Marlon Garcia-Bermejo on 2023-03-21.
+//  Created by Marlon Garcia-Bermejo on 2023-03-22.
 //
 
 import UIKit
 
 class ScoreViewController: UIViewController {
 
-    @IBOutlet weak var countLabel: UILabel!
+    @IBOutlet weak var highestScoreLabel: UILabel!
     
-    @IBOutlet weak var scoreLabel: UILabel!
+    var highestScore: Int = 0
+        
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
+        highestScoreLabel.text = "Score: \(highestScore)"
+        
+        let highestScore = UserDefaults.standard.integer(forKey: "highestScore")
+           highestScoreLabel.text = "Score: \(highestScore)"
+        print("highestScore: \(highestScore)")
+        
+       
+        }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
     }
-    */
 
-}

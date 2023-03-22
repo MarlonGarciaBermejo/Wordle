@@ -66,20 +66,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tlz-yO-yyI">
-                                <rect key="frame" x="84" y="305" width="225" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tlz-yO-yyI">
+                                <rect key="frame" x="16" y="305" width="361" height="213"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="EY9-QL-7fj"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="bmq-ov-Yno"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <color key="textColor" red="0.99973555950000004" green="0.97194546969999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Highest Score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nS6-Nd-7hT">
-                                <rect key="frame" x="93" y="261" width="207" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="AGN-O8-tYQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" red="0.99973555950000004" green="0.97194546969999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -89,20 +80,14 @@
                         <viewLayoutGuide key="safeArea" id="tGv-1i-1bc"/>
                         <color key="backgroundColor" systemColor="systemCyanColor"/>
                         <constraints>
-                            <constraint firstItem="Tlz-yO-yyI" firstAttribute="top" secondItem="nS6-Nd-7hT" secondAttribute="bottom" constant="8" symbolic="YES" id="Cjm-ZC-zI4"/>
                             <constraint firstItem="Tlz-yO-yyI" firstAttribute="leading" secondItem="tGv-1i-1bc" secondAttribute="leading" constant="84" id="IZG-gN-02b"/>
-                            <constraint firstItem="nS6-Nd-7hT" firstAttribute="leading" secondItem="tGv-1i-1bc" secondAttribute="leading" constant="102" id="V6M-SK-ft7"/>
                             <constraint firstItem="tGv-1i-1bc" firstAttribute="bottom" secondItem="Tlz-yO-yyI" secondAttribute="bottom" constant="477" id="VdH-5R-NCJ"/>
-                            <constraint firstItem="Tlz-yO-yyI" firstAttribute="top" secondItem="nS6-Nd-7hT" secondAttribute="bottom" constant="8" symbolic="YES" id="bjs-1A-e01"/>
                             <constraint firstItem="tGv-1i-1bc" firstAttribute="trailing" secondItem="Tlz-yO-yyI" secondAttribute="trailing" constant="84" id="dWs-ee-cev"/>
-                            <constraint firstItem="nS6-Nd-7hT" firstAttribute="top" secondItem="tGv-1i-1bc" secondAttribute="top" constant="158" id="o5K-8v-s5H"/>
-                            <constraint firstItem="tGv-1i-1bc" firstAttribute="trailing" secondItem="nS6-Nd-7hT" secondAttribute="trailing" constant="84" id="q6u-kU-Gpx"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ScoreBoard" id="4wG-K0-oEL"/>
                     <connections>
-                        <outlet property="countLabel" destination="Tlz-yO-yyI" id="qnD-ti-FFl"/>
-                        <outlet property="scoreLabel" destination="nS6-Nd-7hT" id="mcL-bc-BYt"/>
+                        <outlet property="highestScoreLabel" destination="Tlz-yO-yyI" id="UYH-Mj-Tgw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zLM-wb-98x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -194,26 +179,6 @@
                                     <segue destination="2jy-x1-y3O" kind="show" id="5Ji-C0-izq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBe-Wr-UKJ">
-                                <rect key="frame" x="126" y="478" width="141" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="9yf-Mh-gUF"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Score">
-                                            <attributes>
-                                                <font key="NSFont" size="20" name="Helvetica-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="68b-B6-qzr" kind="show" identifier="goToScore" id="bY2-i3-0rO"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="wordletext" translatesAutoresizingMaskIntoConstraints="NO" id="DEQ-4T-LBR">
                                 <rect key="frame" x="82" y="85" width="228" height="200"/>
                             </imageView>
@@ -224,16 +189,11 @@
                         <constraints>
                             <constraint firstItem="c64-vH-fWT" firstAttribute="trailing" secondItem="DEQ-4T-LBR" secondAttribute="trailing" constant="83" id="AAQ-Nu-zMt"/>
                             <constraint firstItem="4DY-1a-NtY" firstAttribute="top" secondItem="DEQ-4T-LBR" secondAttribute="bottom" constant="116" id="Avb-Ji-pJa"/>
-                            <constraint firstItem="dBe-Wr-UKJ" firstAttribute="top" secondItem="4DY-1a-NtY" secondAttribute="bottom" constant="27" id="Bbi-KC-SuD"/>
                             <constraint firstItem="4DY-1a-NtY" firstAttribute="top" secondItem="DEQ-4T-LBR" secondAttribute="bottom" constant="116" id="MBD-mp-HhZ"/>
                             <constraint firstItem="DEQ-4T-LBR" firstAttribute="top" secondItem="rf1-7o-sPM" secondAttribute="top" constant="85" id="OZq-nS-Pe2"/>
                             <constraint firstItem="4DY-1a-NtY" firstAttribute="leading" secondItem="c64-vH-fWT" secondAttribute="leading" constant="126" id="QsO-ei-Zw0"/>
-                            <constraint firstItem="c64-vH-fWT" firstAttribute="bottom" secondItem="dBe-Wr-UKJ" secondAttribute="bottom" constant="290" id="SCo-LH-65J"/>
                             <constraint firstItem="DEQ-4T-LBR" firstAttribute="leading" secondItem="c64-vH-fWT" secondAttribute="leading" constant="82" id="Tme-Ki-fqz"/>
-                            <constraint firstItem="c64-vH-fWT" firstAttribute="trailing" secondItem="dBe-Wr-UKJ" secondAttribute="trailing" constant="126" id="XYL-hB-xC2"/>
-                            <constraint firstItem="dBe-Wr-UKJ" firstAttribute="top" secondItem="4DY-1a-NtY" secondAttribute="bottom" constant="27" id="Ymj-KP-sLi"/>
                             <constraint firstItem="c64-vH-fWT" firstAttribute="trailing" secondItem="4DY-1a-NtY" secondAttribute="trailing" constant="126" id="hiA-W2-QvW"/>
-                            <constraint firstItem="dBe-Wr-UKJ" firstAttribute="leading" secondItem="c64-vH-fWT" secondAttribute="leading" constant="126" id="mme-bq-cxX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Menu" id="TNI-PX-7dX">
@@ -301,7 +261,14 @@
                             <constraint firstItem="jRV-Ug-i8B" firstAttribute="bottom" secondItem="ISq-Av-NaX" secondAttribute="bottom" constant="88" id="rew-VZ-Jdb"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Wordle Game" id="Pgh-6S-kxv"/>
+                    <navigationItem key="navigationItem" title="Wordle Game" id="Pgh-6S-kxv">
+                        <barButtonItem key="rightBarButtonItem" title="High Score" id="o3q-9G-0fH">
+                            <connections>
+                                <action selector="showHighScore:" destination="2jy-x1-y3O" id="KnX-6R-AVj"/>
+                                <segue destination="68b-B6-qzr" kind="show" identifier="showHighestScore" id="nC9-QN-EBM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="randomWordLabel" destination="cBM-xW-Xds" id="LPx-5s-VWN"/>
                         <outlet property="scoreLabel" destination="dML-9Q-O9f" id="rWK-FX-YdO"/>

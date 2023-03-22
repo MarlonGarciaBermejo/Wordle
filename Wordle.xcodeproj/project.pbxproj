@@ -16,8 +16,8 @@
 		C754F80829C88BED0096A7ED /* WordleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C754F80729C88BED0096A7ED /* WordleTests.swift */; };
 		C754F81229C88BED0096A7ED /* WordleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C754F81129C88BED0096A7ED /* WordleUITests.swift */; };
 		C754F81429C88BED0096A7ED /* WordleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C754F81329C88BED0096A7ED /* WordleUITestsLaunchTests.swift */; };
-		C754F82329C9D1280096A7ED /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C754F82229C9D1280096A7ED /* ScoreViewController.swift */; };
 		C754F82529C9F8EF0096A7ED /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C754F82429C9F8EF0096A7ED /* GameViewController.swift */; };
+		C754F82929CB63780096A7ED /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C754F82829CB63780096A7ED /* ScoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +51,8 @@
 		C754F80D29C88BED0096A7ED /* WordleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C754F81129C88BED0096A7ED /* WordleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleUITests.swift; sourceTree = "<group>"; };
 		C754F81329C88BED0096A7ED /* WordleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C754F82229C9D1280096A7ED /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		C754F82429C9F8EF0096A7ED /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		C754F82829CB63780096A7ED /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +110,8 @@
 				C754F7F929C88BED0096A7ED /* Assets.xcassets */,
 				C754F7FB29C88BED0096A7ED /* LaunchScreen.storyboard */,
 				C754F7FE29C88BED0096A7ED /* Info.plist */,
-				C754F82229C9D1280096A7ED /* ScoreViewController.swift */,
 				C754F82429C9F8EF0096A7ED /* GameViewController.swift */,
+				C754F82829CB63780096A7ED /* ScoreViewController.swift */,
 			);
 			path = Wordle;
 			sourceTree = "<group>";
@@ -266,9 +266,9 @@
 			files = (
 				C754F82529C9F8EF0096A7ED /* GameViewController.swift in Sources */,
 				C754F7F529C88BEB0096A7ED /* ViewController.swift in Sources */,
-				C754F82329C9D1280096A7ED /* ScoreViewController.swift in Sources */,
 				C754F7F129C88BEB0096A7ED /* AppDelegate.swift in Sources */,
 				C754F7F329C88BEB0096A7ED /* SceneDelegate.swift in Sources */,
+				C754F82929CB63780096A7ED /* ScoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
