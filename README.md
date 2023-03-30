@@ -1,6 +1,6 @@
 ### Swift Application Project "Wordle Game"
 
-Brief explination of my code and what it does! 
+Brief explanation of my code and what it does! 
 
 This code is a Swift implementation for a word game. The game is about generating random words and giving the user a limited time to type the correct word. The game has a score system that is updated based on the user's performance, and the highest score is saved using UserDefaults. The game has a timer to keep track of the remaining time, and it is implemented using the Timer class. Once the timer runs out, the game ends, and the user can either play again or quit. The code also has a function to generate random words.
 
