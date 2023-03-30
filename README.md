@@ -1,4 +1,4 @@
-### Swift Application Project
+### Swift Application Project "Wordle Game"
 
 Brief explination of my code and what it does! 
 
