@@ -128,19 +128,6 @@ class GameViewController: UIViewController {
         userDefaults.synchronize()
     }
     
-    func updateDifficultyLevel(_ level: String) {
-        switch level {
-        case "easy":
-            timeRemaining = 40.0
-        case "medium":
-            timeRemaining = 25.0
-        case "hard":
-            timeRemaining = 15.0
-        default:
-            timeRemaining = 23.0
-        }
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goPlayAgain" {
                 if let destinationVC = segue.destination as? PlayAgainViewController {
@@ -149,7 +136,7 @@ class GameViewController: UIViewController {
                 }
             }
         }
-//    // To enter the ScoreViewController
+    // To enter the ScoreViewController
     @IBAction func showHighScore(_ sender: Any) {
         performSegue(withIdentifier: "showHighScore", sender: self)
     }
