@@ -18,6 +18,7 @@
 		C754F81429C88BED0096A7ED /* WordleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C754F81329C88BED0096A7ED /* WordleUITestsLaunchTests.swift */; };
 		C754F82529C9F8EF0096A7ED /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C754F82429C9F8EF0096A7ED /* GameViewController.swift */; };
 		C754F82929CB63780096A7ED /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C754F82829CB63780096A7ED /* ScoreViewController.swift */; };
+		C754F82B29CC616D0096A7ED /* PlayAgainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C754F82A29CC616D0096A7ED /* PlayAgainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		C754F81329C88BED0096A7ED /* WordleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C754F82429C9F8EF0096A7ED /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		C754F82829CB63780096A7ED /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		C754F82A29CC616D0096A7ED /* PlayAgainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayAgainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				C754F7FE29C88BED0096A7ED /* Info.plist */,
 				C754F82429C9F8EF0096A7ED /* GameViewController.swift */,
 				C754F82829CB63780096A7ED /* ScoreViewController.swift */,
+				C754F82A29CC616D0096A7ED /* PlayAgainViewController.swift */,
 			);
 			path = Wordle;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				C754F82529C9F8EF0096A7ED /* GameViewController.swift in Sources */,
 				C754F7F529C88BEB0096A7ED /* ViewController.swift in Sources */,
 				C754F7F129C88BEB0096A7ED /* AppDelegate.swift in Sources */,
+				C754F82B29CC616D0096A7ED /* PlayAgainViewController.swift in Sources */,
 				C754F7F329C88BEB0096A7ED /* SceneDelegate.swift in Sources */,
 				C754F82929CB63780096A7ED /* ScoreViewController.swift in Sources */,
 			);

@@ -16,16 +16,18 @@ class ScoreViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+            // high score previewed on this view taken from GameViewController using UserDefault
 
-        highestScoreLabel.text = "Score: \(highestScore)"
+        highestScoreLabel.text = "High Score: \(highestScore)"
         
         let highestScore = UserDefaults.standard.integer(forKey: "highestScore")
-           highestScoreLabel.text = "Score: \(highestScore)"
-        print("highestScore: \(highestScore)")
+           highestScoreLabel.text = "High Score: \(highestScore)"
+        
         
        
         }
-    
+
     
     }
 
