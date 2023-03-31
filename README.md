@@ -9,6 +9,7 @@ The code connects the game's UI elements using the @IBOutlet property wrapper. T
 The GameViewController class has several properties and methods to implement the game's logic. The startTimer function is responsible for starting the timer with a given duration. The updateTimeRemainingLabel function is responsible for updating the remaining time label and ending the game if the time runs out. The updateWord function is called by the timer to update the random word and the remaining time. The textFieldDidChange function is called every time the user types in the typeTextField, and it updates the score and the random word based on the user's input. The saveHighestScore function saves the highest score using UserDefaults, and the prepare function prepares the PlayAgainViewController for the user to play again or quit.
 
 Finally, the randomWord function generates a random word from a list of words.
+
 <img width="1061" alt="WordleBG" src="https://user-images.githubusercontent.com/94327966/229183012-9676e546-ef97-4b13-bce9-75f839057308.png">
 
 ### TOOLS USED:
